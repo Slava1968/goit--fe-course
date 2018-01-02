@@ -1,0 +1,82 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+ 
+}
+body {
+  background-size: cover;
+  font-family: "Pathway Gothic One" , sans-serif;
+  font-size: 16px;
+  background-image: url(https://images.pexels.com/photos/416779/pexels-photo-416779.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+  background-repeat: no-repeat;
+  
+}
+
+
+.wrapper {
+  background-color: white;
+
+  width: 480px ;
+  margin: 100px 400px ;
+ padding: 70px
+  }
+
+
+
+img { 
+ 
+width: 360px;
+  margin: auto;
+ 
+ padding: 30px;
+ 
+ 
+}
+
+
+h4 {
+  color: hsl(194, 92%, 28%);
+  
+  padding: 3px;
+}
+
+h2{
+color: hsl(194, 92%, 28%);
+
+padding: 50px
+}
+
+
+
+.title {
+ margin: auto;
+  
+}
+
+
+.sub-title {
+  margin: auto;
+  
+}
+
+
+.text{
+  
+width: 300px;
+
+}
+.article:last-child {
+  margin-bottom: 10px;
+}
+p {
+width: 300px; 
+padding: 10px;
+}
+.menu 
+{display: inline-block;
+ 
+  width: 160px;
+  padding: 10px
+
+}
