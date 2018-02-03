@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+}
+meta {
+    display: none;
+}
+body {
+    background-image: url(../img/layer-57.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 700px;
+}
+body {
+    line-height: 1;
+}
+.wrapper {
+    width: 1024px;
+    margin: auto;
+}
+header {
+    padding: 100px;
+    position: relative;
+}
+ol, ul {
+    list-style: none;
+}
+
+
+
