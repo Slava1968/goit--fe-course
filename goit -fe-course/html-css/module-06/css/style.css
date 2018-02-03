@@ -1,0 +1,397 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+  }
+:root {
+    --main-font-color: #263555;
+    --second-font-color: #ffffff;
+    --main-background-color: #ffffff;
+    --main-font-size: 16px;
+    --hover-color: #DB7093;
+    --main-font-weight: 400;
+    --fat-font-weight: 600;
+}
+
+.page {
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 15px;
+  background-image: url(../img/page-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.wrapper {
+  width: 950px;
+  margin: auto;
+  padding: 100px 37px 40px 37px;
+  background-color: var(--main-background-color);
+}
+
+.top-part,
+.bottom-part {
+  display: flex;
+}
+
+.agancy-profile,
+.priciples-aside {
+  flex-basis: 30%;
+}
+
+.agancy-profile,
+.offer-section {
+  color: #4e5050;
+  margin-right: calc(6% - 4px);
+}
+
+.top-part {
+  margin-bottom: 50px;
+}
+
+.bottom-part {
+  border-top: 1px solid #dedbdb;
+  padding-top: 50px;
+  color: #4e5050;
+}
+
+h2 {
+  color: #263555;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+/*-----HEADER-----*/
+.header {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.menu {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 26px;
+}
+
+.menu-item {
+  align-items: center;
+  border-bottom: 2px solid transparent;
+}
+
+.menu-item:last-child {
+  margin-right: 0px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: var(--second-font-color);
+}
+
+.menu-item:nth-child(3) {
+  margin-right: 250px;
+}
+
+.menu-item a:hover {
+  color: var(--main-font-color);
+  transition-duration: 0.2s;
+}
+
+.menu-item:hover > .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  font-size: 17px;
+  background-color: var(--second-font-color);
+  border-radius: 5%;
+}
+
+.submenu:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent #fff transparent;
+  transform: translateX(-5px) translateY(-5px);
+  position: absolute;
+}
+
+.submenu-item a {
+  color: var(--main-font-color);
+  margin: 2px;
+}
+
+.logo {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: var(--main-background-color);
+  width: 140px;
+  height: 140px;
+  line-height: 140px;
+  border-radius: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: "Dorsa";
+}
+
+.logo a:hover {
+  color: var(--hover-color);
+  transition-duration: 0.2s;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #263555;
+}
+
+/*-----TOP PART-----*/
+
+.agancy-profile {
+  flex-grow: 2;
+}
+
+.subtitle {
+  color: var(--main-font-color);
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+img {
+  margin-bottom: 25px;
+  margin-right: 25px;
+  float: left;
+  width: 350px;
+}
+
+.list-item {
+  display: flex;
+}
+
+.priciples-aside {
+  counter-reset: priciples-aside;
+}
+
+.list-item::before {
+  counter-increment: priciples-aside;
+  content: counter(priciples-aside);
+  width: 70px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #38afe5;
+  color: var(--second-font-color);
+  text-align: center;
+  line-height: 30px;
+}
+
+.box {
+  vertical-align: top;
+}
+
+.list h3 {
+  color: var(--main-font-color);
+  margin-bottom: 10px;
+  font-size: 15pt;
+}
+
+.list p:last-child {
+  margin-bottom: 0px;
+}
+
+.list li:last-child {
+  margin-bottom: 0px;
+}
+
+.list p {
+  color: #4e5050;
+}
+
+/*-----BOTTOM PART-----*/
+
+.offer-section,
+.excerption {
+  flex-basis: 30%;
+}
+
+.offer-section {
+  flex-grow: 2;
+}
+
+.article p {
+  margin-bottom: 10px;
+}
+
+.excerption p {
+  color: var(--main-font-color);
+  border: 1px solid #dedbdb;
+  background-color: #fcfafa;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.excerption h3 {
+  color: var(--main-font-color);
+  margin-bottom: 10px;
+  font-size: 16pt;
+  text-align: center;
+}
+
+.excerption h4 {
+  color: #4e5050;
+  font-size: 13pt;
+  text-align: center;
+}
+
+.excerption p:before {
+  content: "  " "\0022" " ";
+}
+
+.excerption p:after {
+  content: " " "\0022";
+}
+
+.columns {
+  column-count: 2;
+  color: var(--main-font-color);
+}
+
+.columns li:before {
+  content: "\2192";
+  color: #38afe5;
+  margin-right: 5px;
+}
+
+.columns li:nth-child(5) {
+  margin: 0;
+}
+
+.columns li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+/*-----NAV SECTION-----*/
+
+.nav-section {
+  background-color: #30455b;
+  width: 950px;
+  margin: auto;
+  padding: 40px 37px 20px 37px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.menu-part {
+  flex-basis: 75%;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.contacts-part {
+  flex-basis: 15%;
+}
+
+.menu-part ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-part li {
+  flex-basis: 33%;
+  justify-content: center;
+}
+
+.menu-part a {
+  text-decoration: none;
+  color: var(--second-font-color);
+}
+
+.contacts-part {
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.contacts-part a {
+  flex-basis: 45%;
+  text-decoration: none;
+  color: var(--second-font-color);
+}
+
+.contacts-part a:hover {
+  color: var(--hover-color);
+}
+
+/*----FOOTER-----*/
+
+.footer p {
+  color: var(--second-font-color);
+  text-align: center;
+  font-size: 13px;
+}
+
+.social-icons ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  background-color: var(--main-background-color);
+  border-radius: 50%;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.social-icons img:hover {
+  transform: scale(1.5);
+  transition-duration: 0.15s;
+}
+
+.to-top-bottom {
+  position: fixed;
+  bottom: 250px;
+  right: 205px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #38afe5;
+  border-radius: 100%;
+  color: var(--second-font-color);
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+.to-top-bottom:before {
+  content: "\21D1";
+}
+
+.to-top-bottom:hover {
+  background-color: var(--hover-color);
+}
