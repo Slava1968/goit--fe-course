@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+  }
+ 
+  .page {
+    font-family: "Lora", sans-serif;
+    font-size: 5px;
+    background-image:  url("../img/108.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+
+    font-weight: 400;
+    padding: 30px 0px;
+    line-height: 1.5;
+  }
+  .wrapper {
+    width: 1000px;
+    margin: auto;
+   
+    background-color: rgb(238, 223, 13);
+  }
+  .title {
+    display: block;
+
+
+
+
+
+font-size: 30px;
+text-align: center;
+color: #003cff;
+}
