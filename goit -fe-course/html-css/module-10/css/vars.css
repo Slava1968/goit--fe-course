@@ -1,0 +1,12 @@
+:root {
+  --color-lightcoral: #f38181;
+  --color-yellow: #fce38a;
+  --color-aquamarine: #95e1d3;
+  --color-white: #ffffff;
+  --caption-color: #333333;
+  --main-color: #999999;
+  --caption-font: "Montserrat", sans-serif;
+  --main-font: "Roboto", sans-serif;
+  --caption-font-size: 0.875;
+  --base-font-size: 0.9375rem;
+}
