@@ -1,0 +1,95 @@
+.masthead-wrapper {
+  background: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%
+    ),
+    url(../img/layer-15.jpg) no-repeat center;
+  background-size: cover;
+  padding: 1.625rem 0rem 0rem 0rem;
+  margin-bottom: 2.75rem;
+  min-height: 62.5rem;
+}
+
+.container {
+  width: 75rem;
+  margin: auto;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+
+.logo {
+  display: inline-block;
+  font: 700 1.875rem "Montserrat", sans-serif;
+  color: color("white");
+  text-decoration: none;
+  &__uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.nav {
+  &__list {
+    @extend %reset-set;
+    display: flex;
+    list-style: none;
+  }
+  &__item:not(:last-child) {
+    margin-right: 3.25rem;
+  }
+  &__link {
+    display: inline-block;
+    font: 0.875rem "Montserrat", sans-serif;
+    color: color("white");
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.625rem 0rem;
+    border-bottom: 0.1875rem solid rgba(252, 227, 138, 0);
+    fill: color("white");
+    &:hover {
+      color: color("yellow");
+      fill: color("yellow");
+      border-bottom-color: rgba(252, 227, 138, 1);
+    }
+  }
+}
+
+.home-page {
+  width: 70%;
+  margin: auto;
+  color: color("white");
+  display: block;
+  text-align: center;
+  &__text {
+    display: block;
+    font: 4.5rem "Kaushan Script", cursive;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  &__title {
+    @extend %reset-set;
+    font: 700 9.375rem "Montserrat", sans-serif;
+    line-height: 8.75rem;
+    text-transform: uppercase;
+    margin-bottom: 6.75rem;
+  }
+  &__button {
+    display: block;
+    margin: auto;
+    width: 10rem;
+    height: 2.5rem;
+    font: 700 0.875rem "Montserrat", sans-serif;
+    line-height: 2.5rem;
+    color: color("white");
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 0.1875rem solid rgba(255, 255, 255, 0);
+    &:hover {
+      border-color: rgba(255, 255, 255, 1);
+    }
+  }
+}

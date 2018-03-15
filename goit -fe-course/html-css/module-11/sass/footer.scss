@@ -1,0 +1,45 @@
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.0625rem solid #e5e5e5;
+  padding: 0.625rem 0rem;
+  &__copyright {
+    @extend %reset-set;
+    font: 700 0.875rem 'Montserrat', sans-serif;
+    color: color("caption-color");
+    text-align: center;
+    &-link {
+      text-decoration: none;
+      color: color("lightcoral");
+    }
+  }
+}
+
+.page-footer__form {
+  &-input {
+    border: 0;
+    box-sizing: border-box;
+    width: 14.375rem;
+    height: 2.5rem;
+    border: 0.0625rem solid #e5e5e5;
+    padding-left: 0.625rem;
+    font: italic 300 0.9375rem "Roboto", sans-serif;
+    color: color("caption-color");
+    &::-webkit-input-placeholder {
+      font: italic 300 0.9375rem "Roboto", sans-serif;
+      color: #cccccc;
+    }
+  }
+  &-button {
+    border: 0;
+    width: 9.375rem;
+    height: 2.5rem;
+    background-color: color("aquamarine");
+    color: color("white");
+    font: 700 0.875rem 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: -0.25rem;
+  }
+}

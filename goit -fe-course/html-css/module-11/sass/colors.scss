@@ -1,0 +1,12 @@
+$colors: (
+  "lightcoral": #f38181,
+  "yellow": #fce38a,
+  "aquamarine": #95e1d3,
+  "white": #ffffff,
+  "caption-color": #333333,
+  "main-color": #999999
+);
+
+@function color($color) {
+  @return map-get($colors, $color);
+}
